@@ -1,1 +1,39 @@
-
+level = input("Choose your level (1, 2, or 3): ").strip()
+ 
+if level == "1":
+    print("You have chosen Level 1")
+ 
+    score = 0
+ 
+    q1 = input("What is the meaning of 'aiyo'? ").strip().lower()
+    if q1 == "oh no":
+        print("Congratulations! You are correct!")
+        score += 1
+    else:
+        print("Ooh, the correct answer is actually 'oh no'.")
+ 
+    q2 = input("What is the meaning of 'alamak'? ").strip().lower()
+    if q2 == "goodness":
+        print("Congratulations! You are correct!")
+        score += 1
+    else:
+        print("Ooh, the correct answer is actually 'goodness'.")
+ 
+    q3 = input("What is the definition of 'angmoh'? ").strip().lower()
+    if q3 in ["caucasian", "white person", "westerner"]:
+        print("Congratulations! That is correct!")
+        score += 1
+    else:
+        print("Ooh, the correct answer is actually 'caucasian', 'white person', or 'westerner'.")
+ 
+    print(f"\nYou scored {score}/3.")
+    print("Congratulations! You have finished Level 1")
+ 
+elif level == "2":
+    print("Level 2 is coming soon!")
+ 
+elif level == "3":
+    print("Level 3 is coming soon!")
+ 
+else:
+    print("Please choose a valid level (1, 2, or 3).")
